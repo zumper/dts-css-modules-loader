@@ -23,10 +23,11 @@ yarn add -D dts-isomorphic-styles-loader
     {
       loader: 'dts-isomorphic-styles-loader',
       options: {
-        namedExport: true,
+        namedExport: false,
         banner: "// This file is generated automatically"
       }
     },
+    require.resolve('isomorphic-style-loader'),
     {
       loader: 'css-loader',
       options: {
