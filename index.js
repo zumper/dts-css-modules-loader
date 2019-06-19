@@ -25,7 +25,7 @@ module.exports = function(content) {
       }
     } else {
       const i = getInterfaceName(this.resourcePath);
-      typings += `export interface ${i} {\n`;
+      typings += `export interface ${i} {\n  _getCss(): string;\n`;
       for (let c of classes) {
         typings += `  '${c}': string;\n`;
       }
